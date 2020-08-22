@@ -1,0 +1,11 @@
+
+a {
+  color: #00B7FF;
+}
+.formcontainer{
+  display: flex;
+  justify-content: center;
+}
+.formcontainer form{
+  width: 70%;
+}

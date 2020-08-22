@@ -1,0 +1,26 @@
+<div class="formcontainer">
+<form method="POST" action="/todos/{{todo.id}}">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input class="form-control" type="text" id="title" name="title" value="{{todo.title}}">
+    </div>
+    
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" placeholder="Enter A Todo Description">{{todo.description}}</textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="priority">Priorepty</label>
+        <input class="form-control" type="number" id="priority" name="priority" value="{{todo.priority}}">
+    </div>
+    <div class="form-group d-flex" style="align-items: center;" >
+        <label for="done">Done</label>
+        <input class="form-control" type="checkbox" {{#if todo.done }}checked {{/if}} id="done" name="done">
+    </div>
+    <hr/>
+    <a  href="/todos/{{todo.id}}/delete" class="btn btn-outline-danger float-right">Delete</a>
+    <button type="submit" class="btn btn-outline-success float-right mx-2">Update</button>
+
+</form>
+</div>

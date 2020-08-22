@@ -1,0 +1,8 @@
+<div class="formcontainer">
+<form method="POST" action="/todos/{{todo.id}}/delete">
+    <div class="form-group">
+        <p>Do You Realy want to Delete TODO : "{{todo.title}}"</p>
+    </div>
+    <button class="btn btn-danger mr-3" type="submit" >Delete</button><a  href="/todos/{{todo.id}}" class="btn btn-outline-info">Cancel</a>
+</form>
+</div>

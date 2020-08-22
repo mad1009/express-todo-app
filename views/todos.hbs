@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<ul class="list-group" >
+    {{#each todos}}
+       <a href="/todos/{{id}}"><li {{#if done}} style="text-decoration-line: line-through;" {{/if}}  class="list-group-item">{{title}} <span class="badge badge-dark" style="border-radius: 50%;">{{priority}}</span> </li></a>
+    {{/each}}
+</ul>
+<a class="btn btn-info mt-3" href="/todos/new">Create Todo</a>

@@ -1,0 +1,18 @@
+<h1>{{todo.title}} Detail</h1>
+
+<div class="card" style="width: 70%;">
+  <div class="card-header">
+    <h5>{{todo.title}}  <span class="badge badge-dark" style="border-radius: 50%;">{{todo.priority}}</span></h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text" >{{todo.description}}</p>
+    <p class="card-text" >Complete : {{todo.done}}</p>
+  </div>
+  <div class="card-footer">
+    <p>{{todo.date}}</p>
+    <a href="/todos/{{todo.id}}/edit" class="btn btn-primary mr-2">Edit</a>
+    <a  href="/todos/{{todo.id}}/delete" class="btn btn-outline-danger mr-2">Delete</a>
+    <a  href="/todos" class="btn btn-success">Back To Todos</a>
+
+  </div>
+</div>
